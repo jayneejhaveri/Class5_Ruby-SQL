@@ -1,0 +1,2 @@
+class Comonay < ApplicationRecord
+end
