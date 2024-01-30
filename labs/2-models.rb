@@ -44,10 +44,18 @@ puts "Salespeople: #{Salesperson.all.count}"
 # Salespeople: 2
 
 # 4. modify/update column data for a row in the salespeople table.
-
+jaynee = Salesperson.find_by({"first_name" => "Jaynee"})
+jaynee["email"] = "jaynee.jhaveri@kellogg.northwestern.edu"
+jaynee.save
 
 # CHALLENGE:
 # 5. write code to display each salesperson's full name
+
+salespeople = Salesperson.all
+
+for name in salespeople
+    puts "#{name["first_name"]} #name{["last_name"]}
+end
 
 # ---------------------------------
 # Salespeople: 2
